@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <!--Här ligger en navigationsmeny med både navigation till olika sidor,
+    men också till instagram och linkedin. Ikonerna är länkade i head:n-->
+    <div class="topnav">
+        <a class="active" href="index.html">HOME</a>
+        <a href="case1.html">CASE 1</a>
+        <a href="case2.html">CASE 2</a>
+        <div id="nav-icon">
+            <a href="#"><i class="fa fa-instagram"></i> </a>
+            <a href="#"><i class="fa fa-linkedin"></i> </a>
+        </div>  
+      </div>
+    
+    <!--Här har jag lagt in en div som har klassen hero-image. I CSS:n så har jag lagt
+    in länken till bilden, samt dragit ner opaciteten på bilden. Jag har även lagt in
+    text som jag centrerat och en knapp-->
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 class="ml2" class="title">Denise Heijkenskjöld</h1>
+          <p id="hero">UX/UI designer</p>
+           <a href="#persona"><button class="hero-button ">More about me</button></a>
+           <br>
+           <br>
+           <button id="randomButton" class= "hero-button">  Click to get encouragment </button>
+           <p id="message"></p>
+        </div>
+      </div>
+     
+    
+    <!--Här börjar nästa del av första sidan. Först har jag en titel och en 
+    beskrivning som ligger inom en div, för att lätt ge dem samma-->
+    <section>
+        <div class="title-desc">
+            <h1 class="title">Cases</h1>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque, dolore itaque facere nulla amet aliquid qui molestiae 
+            sunt dolor saepe corrupti doloremque cum. Nostrum optio doloribus
+            ullam voluptas dolores fugit.</p>
+        </div>
+
+        <!--Här ligger "korten" med bild, titel, beskrivning samt en knapp. De 
+        både korten ligger inom samma div så att de hamnar på samma rad. Resterande
+        div:ar har fått passande klasser, för att kunna lägga till styling på elementen
+        och använda samma styling i de olika korten-->
+        <div class="row">
+            <div class="column">
+                <div class="case">
+                    <img src="stockimage1.jpg" alt="Bild som representerar Case 1 - i detta fall redesin av Chas academys hemsida" style="width:100%">
+                    <div class="case-div">
+                        <h2>Chas Academy</h2>
+                        <p class="case-desc">Redesign of website</p>
+                        <p><button class="case-button">read more</button></p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="column">
+                <div class="case">
+                    <img src="stockimage2.jpg" alt="Bild som representerar Case 2 - i detta fall redesin av Senseras hemsida" style="width:100%">
+                    <div class="case-div">
+                        <h2>Sensera AB</h2>
+                        <p class="case-desc">Redesign of website</p>
+                        <p><button class="case-button">read more</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+  
+    <!--Här börjar nästa sektion av sidan som består av en titel, beskrivning
+    och en bild. Sektionen är länkad ifrån knappen från hero-pagen med hjälp av
+    ett id. Sektionen har även fått klassen "sec-pink", för kunna ändra
+    bakgrundsfärgen med css.-->
+    <section id="persona" class="sec-pink">
+        <br>
+        <div class="title-desc">
+            <h1  class="title">Persona</h1>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Atque, dolore itaque facere nulla amet aliquid qui molestiae 
+            sunt dolor saepe corrupti doloremque cum. Nostrum optio doloribus
+            ullam voluptas dolores fugit.</p>
+        </div>
+        <img src="denise-persona.jpg" alt="Persona of denise with the follwing info:
+        Picture of Denise. Title: Denise Heijkenskjöld. Age: 22 years old. Occupation: Student
+        at Chas Academy. Descriptive text: Denise is a very social and empathic individuell, 
+        who creates her own structrure and often strives towards towards roles with more influence. 
+        During her highschool years she studied animation and has for a long time been very intrested
+         in different forms av art - especially digital art. Qoute: It's not easy when it's hard, but we can do it anyways! 
+         I believe in us! Goals: Improve work related skills, Help improve the school system, Have a social work Environment. Motivations:
+         Helping people = 89%, Knowledge = 85%, Having fun = 74%. Certificates: User Experience: The Beginner’s Guide, Become a UX Designer from Scratch, 
+         Interaction for usability (From interacton design foundation) Personality: Helpful Independant, Optimistic,
+         Flexible. Intrests: Board games, Illustrating, Hanging out with family and friends, Baking." class="image">
+        <br><br><br>
+    </section>   
+
+    <!--Footern ligger inom en div och består av tre olika delar - en bild
+    och två listor. Listorna består av länkar som antingen hjälper till att
+    navigera på sidan eller kontaktuppgifter.-->
+    <footer>
+    <div id="footer">
+        <img src="denise-real.png" alt="Illustrated self-portrait of Denise." class="denise-art">
+        
+        <ul class="nobull">
+            <li class="footer-title">Menu</li>
+            <br>
+            <li><a class="footer-list" href="index.html">Home</a></li>
+            <li><a class="footer-list" href="case1.html">Case 1</a></li>
+            <li><a class="footer-list"href="case2.html">Case 2</a></li>
+           
+
+        </ul>
+        
+        <ul class="nobull" >
+            <li class="footer-title">Contact</li>
+            <br>
+            <li><a class="footer-list" href="#"><i class="fa fa-instagram"></i>  Instagram </a></li>
+            <li><a class="footer-list" href="#"><i class="fa fa-linkedin"></i>  Linkedin</a></li>
+            <li><a class="footer-list" href="#"><i class="fa fa-envelope"></i>  Mail</a></li>
+        </ul>
+      </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
